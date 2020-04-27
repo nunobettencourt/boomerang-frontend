@@ -8,7 +8,7 @@ const propertyReducer = (state = INITIAL_STATE, action) => {
 			const { payload: property } = action;
 			return {
 				...state,
-				property,
+				...property,
 			};
 		default:
 			return state;
