@@ -3,15 +3,21 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Homepage from '../homepage/Homepage';
+import Results from '../results/Results';
 
 const App = () => (
 	<Router>
 		<div className="App">
-			<Switch>
-				<Route path="/">
-					<Homepage />
-				</Route>
-			</Switch>
+			<main>
+				<Switch>
+					<Route path="/results">
+						<Results />
+					</Route>
+					<Route path="/">
+						<Homepage />
+					</Route>
+				</Switch>
+			</main>
 		</div>
 	</Router>
 );
